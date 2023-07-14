@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ma page web</title>
+  <style>
+    /* Style pour le menu */
+    header {
+      background-color: rgb(248, 216, 242);
+      padding: 20px;
+    }
+       
+    /* Style pour les pages */
+    .page {
+      display: none;
+    }
+    
+    /* Style spÃŠcifique pour chaque page */
+   
+    #logo-page, #home-page, #produit-page, #contact-page {
+      display: none;
+    }
+  </style>
+   
+   <script>
+    function showPage(pageId) {
+      // Cacher toutes les pages
+      var pages = document.getElementsByClassName("page");
+      for (var i = 0; i < pages.length; i++) {
+        pages[i].style.display = "none";
+      }
+      
+      // Afficher la page sÃŠlectionnÃŠe
+      var page = document.getElementById(pageId);
+      page.style.display = "block";
+    }
+  </script>
+   
+</head>
+<body>
+  <header>
+   
+    <!-- Menu -->
+
+    <style>
+        th, td {
+          border: 1px solid rgb(246, 226, 242);
+          border-radius: 10px;
+          border-style: outset;
+          text-align:center
+}
+
+        </style>
+
+    <table style="width:100%">
+      <tr>
+        <td><a href="#"><img src="logo.png" 
+                             alt="logo"
+                             style="width:42px;height:42px;" 
+                             onclick="showPage('logo-page')">logo</a></td> 
+
+        <td><a href="#" onclick="showPage('home-page')">Home</a></td>
+        <td><a href="#" onclick="showPage('produit-page')">Produit</a></td>
+        <td><a href="#" onclick="showPage('contact-page')">Contact</a></td>
+      </tr>
+    </table>
+  </header>
+  
+  <!-- Pages -->
+  <style>
+    body {background-color: rgb(246, 226, 242);}
+    h1   {color: rgb(27, 27, 75);text-align:center;}
+    p    {color: rgb(0, 0, 0);text-align:center;font-family:courier;}
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    
+  </style>
+
+  <div id="logo-page" class="page">
+    <h1>Page logo</h1>
+    <img src="logo.png" alt="Logo">
+  </div>
+  
+
+  <div id="home-page" class="page">
+    <h1 style="text-align:center;">Page Home</h1>
+    <p>ici vous trouvez le contenu de la page Home de Rahmani Hhdiba.</p>
+  </div>
+  
+
+  <div id="produit-page" class="page">
+    <h1>Page Produit</h1>
+    <img src="produit.jpg" alt="Produit">
+    <p>ici vous trouvez la description de notre produit.</p>
+  </div>
+  
+
+  <div id="contact-page" class="page">
+    <h1>Page Contact</h1>
+    <p>Contactez-moi sur les plateformes suivantes :</p>
+    <p>
+        Adresse e-mail : <a href="mailto:rahmani_mon@hotmail.com">rahmani_mon@hotmail.com</a><br>
+    <img src="logoFB.png" 
+        alt="Logo Facebook" 
+        width="20" height="20"> 
+        <a href="https://www.facebook.com/profile.php?id=100004555307676">rahmani hdhiba</a>
+
+    <img src="logoINST.png" 
+    alt="Logo Instagram" 
+    width="20" height="20"> 
+    <a href="https://www.instagram.com/rahmanimouna/">rahmani hdhiba</a>
+      </p>
+
+     
+
+</body>
+</html>
